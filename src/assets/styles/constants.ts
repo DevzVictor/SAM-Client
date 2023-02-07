@@ -1,7 +1,8 @@
 export const constants = {
     logoFontFamily: 'Alegreya Sans',
-    logoFontSize: '28px',
+    logoFontSize: '40px',
     logoLineHeight: '140%',
+    logoFontWeight: '900',
 
     headingFontFamily: 'Merriweather',
     headingFontSize: '28px',

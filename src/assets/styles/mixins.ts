@@ -8,6 +8,8 @@ const logoStyle = () => css`
   font-family: ${constants.logoFontFamily};
   font-size: ${constants.logoFontSize};
   line-height: ${constants.logoLineHeight};
+  font-weight: ${constants.logoFontWeight};
+  color: ${colors.primaryColor};
 `;
 
 // Configuração para o estilo do título
@@ -76,7 +78,7 @@ const buttonIcon = (active = false) => css`
   border: none;
   cursor: pointer;
   background-color: ${active ? colors.primaryColor : "transparent"};
-  color: ${active ? colors.textColor : colors.primaryColor};
+  color: ${active ? colors.textLighter : colors.primaryColor};
   ${active && buttonIconModifiers.active()}
 `;
 
