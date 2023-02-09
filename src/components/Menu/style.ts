@@ -18,7 +18,7 @@ export const Menu = styled.menu`
   ${({ theme }) => css`
     margin: 0;
     padding: 20px 0;
-    height: 100vh;
+    height: 120vh;
     width: 105px;
     display: flex;
     flex-direction: column;

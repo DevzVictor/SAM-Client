@@ -29,7 +29,7 @@ const Home = () => {
           </S.HomeHeaderDetails>
         </header>
         <div>
-          <S.HomeTitle>Pacientes</S.HomeTitle>
+          <S.HomeTitle><b>Pacientes</b></S.HomeTitle>
           <S.HomePatientList>
             <PatientList>
               <PatientCard></PatientCard>
