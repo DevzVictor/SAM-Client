@@ -16,4 +16,6 @@ export const colors = {
     textLight: "#ABBBC2",
     textNeutral: "#E8E8E8",
     textDark: "#0E86D2",
+
+    buttonLoginColor: "#04C35C",
 }

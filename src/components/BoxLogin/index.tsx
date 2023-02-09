@@ -1,4 +1,5 @@
 import * as S from "./style";
+import ButtonLarge from "components/ButtonLarge";
 
 const BoxLogin = () => {
   return (
@@ -12,10 +13,14 @@ const BoxLogin = () => {
         <input type="text" />
         <span>Senha</span>
         <input type="password" />
-      </S.BoxLoginForm>
-      <S.BoxLoginLogoLink>
+        <S.BoxLoginLogoLink>
         {'Esqueceu sua senha?'}
       </S.BoxLoginLogoLink>
+        <ButtonLarge value="Entrar" type="button" />
+      </S.BoxLoginForm>
+      <S.BoxLoginLogoText>
+         <span>Não tem uma conta? {<S.BoxLoginLogoLink>Cadastre-se</S.BoxLoginLogoLink>}</span>
+      </S.BoxLoginLogoText>
     </S.BoxLogin>
   );
 };

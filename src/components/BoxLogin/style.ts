@@ -4,13 +4,13 @@ export const BoxLogin = styled.section`
   ${({ theme }) => css`
     background: ${theme.colors.baseBg2};
     width: 50%;
-    height: 100%;
+    height: 80%;
+    padding-top: 40px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid black;
     color: ${theme.colors.textColor};
   `}
 `;
@@ -33,10 +33,10 @@ export const BoxLoginLogoText = styled.text`
 `;
 export const BoxLoginLogoLink = styled.text`
   ${({ theme }) => css`
-    margin: 0;
     ${theme.mixins.bodyStyle()};
     color: ${theme.colors.primaryColor};
-    text-align: left;
+    text-align: right;
+    cursor: pointer;
     h2 {
       height: 100%;
     }
