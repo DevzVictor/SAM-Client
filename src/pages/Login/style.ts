@@ -6,6 +6,9 @@ export const LoginScreen = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 600px) {
+      display: grid;
+    }
   `}
 `;
 
@@ -16,6 +19,9 @@ export const LoginRight = styled.section`
     background-position: center;
     width: 50%;
     height: 100vh;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   `}
 `;
 
@@ -26,6 +32,9 @@ export const LoginLeft = styled.section`
     background-position: center;
     width: 50%;
     height: 100vh;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   `}
 `;
 
