@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const PatientCard = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.baseBg2};
+    background: ${theme.colors.secondaryColor};
     border-radius: 16px;
     display: flex;
     flex-direction: column;

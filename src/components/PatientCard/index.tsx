@@ -5,7 +5,7 @@ const PatientCard = () => {
     <S.PatientCard>
         <S.PatientCardImage src="" alt=""/>
         <div>
-            <S.PatientCardName></S.PatientCardName>
+            <S.PatientCardName>Maria Tereza</S.PatientCardName>
         </div>
     </S.PatientCard>
   );
