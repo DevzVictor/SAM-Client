@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const ButtonLarge = styled.button`
   ${({ theme }) => css`
     background: ${theme.colors.buttonLoginColor};
+    margin-top: 10px;
     border: none;
     border-radius: 8px;
     color: ${theme.colors.textColor};
