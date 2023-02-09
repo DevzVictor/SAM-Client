@@ -14,52 +14,57 @@ export const SettingsPage = styled.div`
   ${() => css`
     display: flex;
     flex-direction: column;
-    width: calc(100% - 100px);
+    width: calc(100%);
     max-height: 100vh;
     padding: 25px;
     box-sizing: border-box;
   `}
 `;
 
-export const SettingsPageHeaderTitle = styled.h1`
+export const SettingsHeaderDetailsLogo = styled.h1`
   ${({ theme }) => css`
-    ${theme.mixins.headingStyle()};
+    ${theme.mixins.logoStyle};
+    text-transform: uppercase;
     margin: 0;
   `}
 `;
 
-export const SettingsContent = styled.main`
+export const SettingsHeaderDetails = styled.div`
   ${() => css`
     display: flex;
-    gap: 25px;
-    margin-top: 25px;
+    justify-content: space-between;
   `}
 `;
 
-export const SettingsContentSidebar = styled.aside`
-  ${() => css`
-    menu {
-      margin: 0;
+export const SettingsTitle = styled.h2`
+  ${({ theme }) => css`
+    margin: 0;
+    border-bottom: 1px solid ${theme.colors.baseLine};
+    ${theme.mixins.bodyStyle()};
+    color: ${theme.colors.primaryColor};
+    padding-bottom: 10px;
+    b {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -13px;
+        width: 100%;
+        height: 4px;
+        background-color: ${theme.colors.primaryColor};
+        border-radius: 5rem;
+      }
     }
   `}
 `;
 
-export const SettingsContentBox = styled.div`
+export const SettingsContent = styled.main`
   ${({ theme }) => css`
-    background-color: ${theme.colors.baseBg2};
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   `}
 `;
 
-export const SettingsContentBoxEmpty = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    ${theme.mixins.headingStyle()};
-    font-weight: 500;
-    text-transform: uppercase;
-  `}
-`;

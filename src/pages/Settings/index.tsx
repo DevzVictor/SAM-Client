@@ -1,8 +1,8 @@
 import Menu from "components/Menu";
+import BoxUpdateUser from "components/BoxUpdateUser";
 import { RoutePath } from "types/routes";
 import { navigationItems } from "data/navigation";
 import * as S from "./style";
-import { Outlet } from "react-router-dom";
 
 const Settings = () => {
   return (
@@ -10,18 +10,15 @@ const Settings = () => {
       <Menu active={RoutePath.SETTINGS} navItems={navigationItems} />
       <S.SettingsPage>
         <header>
-          <S.SettingsPageHeaderTitle>Configurações</S.SettingsPageHeaderTitle>
+          <S.SettingsHeaderDetails>
+            <S.SettingsHeaderDetailsLogo>SAM</S.SettingsHeaderDetailsLogo>
+          </S.SettingsHeaderDetails>
         </header>
+        <div>
+            <S.SettingsTitle><b>Painel do Usuário</b></S.SettingsTitle>
+        </div>
         <S.SettingsContent>
-          <S.SettingsContentSidebar>
-            {"Componente NavColumn"}
-          </S.SettingsContentSidebar>
-          <S.SettingsContentBox>
-            <S.SettingsContentBoxEmpty>
-              Selecione uma categoria
-            </S.SettingsContentBoxEmpty>
-            <Outlet />
-          </S.SettingsContentBox>
+            <BoxUpdateUser></BoxUpdateUser>
         </S.SettingsContent>
       </S.SettingsPage>
     </S.Settings>
