@@ -1,5 +1,14 @@
 import styled, { css } from "styled-components";
 
+
+export const LoginScreen = styled.main`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `}
+`;
+
 export const LoginRight = styled.section`
   ${({ theme }) => css`
     background-color: ${theme.colors.baseBg1};
@@ -16,14 +25,13 @@ export const LoginLeft = styled.section`
     background-size: cover;
     background-position: center;
     width: 50%;
-    height: 100%;
+    height: 100vh;
   `}
 `;
 
 export const LoginLogo = styled.div`
   ${() => css`
     display: flex;
-    justify-content: left;
     padding: 20px 0px 0px 50px;
     img {
       height: 80px;
@@ -38,7 +46,7 @@ export const LoginLogo = styled.div`
   `}
 `;
 
-export const LoginText = styled.h2`
+export const LoginTextSlogan = styled.h2`
   ${({ theme }) => css`
     margin: 0;
     ${theme.mixins.bodyStyle()};
@@ -71,11 +79,11 @@ export const LoginImg = styled.div`
   `}
 `;
 
-export const LoginContent = styled.main`
+export const LoginContent = styled.div`
   ${({ theme }) => css`
     width: 100%;
     height: 100%;
     justify-content: center;
-    align-items: center; ;
+    align-items: center;
   `}
 `;
