@@ -2,6 +2,7 @@ import * as S from "./style";
 import { AiOutlineSearch } from "react-icons/ai";
 import Menu from "components/Menu";
 import PatientList from "components/PatientList";
+import PatientCard from "components/PatientCard";
 import { RoutePath } from "types/routes";
 import { navigationItems } from "data/navigation";
 
@@ -24,7 +25,9 @@ const Home = () => {
         <div>
           <S.HomeTitle>Pacientes</S.HomeTitle>
           <S.HomePatientList>
-            <PatientList></PatientList>
+            <PatientList>
+              <PatientCard></PatientCard>
+            </PatientList>
           </S.HomePatientList>
         </div>
       </S.HomeContent>
