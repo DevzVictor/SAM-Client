@@ -1,6 +1,7 @@
 import * as S from "./style";
 import { AiOutlineSearch } from "react-icons/ai";
 import Menu from "components/Menu";
+import PatientList from "components/PatientList";
 import { RoutePath } from "types/routes";
 import { navigationItems } from "data/navigation";
 
@@ -22,7 +23,9 @@ const Home = () => {
         </header>
         <div>
           <S.HomeTitle>Pacientes</S.HomeTitle>
-          <S.HomePatientList><p>lista de produtos</p></S.HomePatientList>
+          <S.HomePatientList>
+            <PatientList></PatientList>
+          </S.HomePatientList>
         </div>
       </S.HomeContent>
     </S.Home>
