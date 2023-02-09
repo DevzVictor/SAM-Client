@@ -13,9 +13,16 @@ export const PatientCard = styled.div`
     width: 100%;
     cursor: pointer;
     min-height: 225px;
-    div {
+    .name {
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10px;
+    }
+    .icons {
+      display: flex;
+      flex-direction: row;
       justify-content: space-around;
       align-items: center;
       gap: 10px;
@@ -26,7 +33,8 @@ export const PatientCard = styled.div`
 export const PatientCardImage = styled.img`
   ${() => css`
     width: 150px;
-    margin-top: -50px;
+    border-radius: 50%;
+    margin-top: -75px;
   `}
 `;
 
@@ -34,27 +42,7 @@ export const PatientCardName = styled.h3`
   ${({ theme }) => css`
     ${theme.mixins.bodyStyle()}
     text-align: center;
-    max-width: 90%;
-    margin: 0;
-  `}
-`;
-
-export const PatientCardPrice = styled.strong`
-  ${({ theme }) => css`
-    ${theme.mixins.bodyStyle()}
-    text-align: center;
-    max-width: 90%;
-    margin: 0;
-    color: ${theme.colors.primaryColor};
-  `}
-`;
-
-export const PatientCardDescription = styled.small`
-  ${({ theme }) => css`
-    ${theme.mixins.bodyStyle()}
-    text-align: center;
-    max-width: 90%;
-    margin: 0;
-    font-size: 12px;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
   `}
 `;
