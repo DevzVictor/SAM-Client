@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Home = styled.section`
   ${({ theme }) => css`
     background-color: ${theme.colors.baseBg1};
-    min-width: 100vw;
+    width: 100%
     min-height: 100vh;
     color: ${theme.colors.textColor};
     display: flex;
