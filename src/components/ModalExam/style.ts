@@ -17,7 +17,7 @@ export const ModalDiv = styled.div`
     justify-content: flex-end;
     padding: 0 0 20px 0;
     button {
-      margin-left: 5.5rem;
+      margin-left: 8rem;
     }
   `}
 `;
@@ -58,7 +58,7 @@ export const BoxModalForm = styled.form`
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    border: none;
+    border: none
     width: 100%;
     input {
       ${theme.mixins.input()};
@@ -76,16 +76,11 @@ export const BoxModalForm = styled.form`
       font-weight: normal;
       width: 49%;
     }
-    .quantidade {
-        width: 49%;
     }
-    .tipo {
+    .data {
         width: 49%;
     }
     .horas {
-        width: 49%;
-    }
-    .minutos {
         width: 49%;
     }
     .nome {

@@ -26,11 +26,12 @@ const customStyles = {
 Modal.setAppElement("#root");
 
 interface ModalProps {
-  openM: boolean;
+  open: boolean;
   closeModal: () => void;
 }
 
-const ModalMedicament = ({ openM, closeModal }: ModalProps) => {
+const ModalExam = ({ open, closeModal }: ModalProps) => {
+  
   function handleModal(
     e: React.MouseEvent<HTMLSpanElement, MouseEvent>,
     canClose: boolean
@@ -43,25 +44,23 @@ const ModalMedicament = ({ openM, closeModal }: ModalProps) => {
 
   return (
     <div>
-      <Modal isOpen={openM} style={customStyles} contentLabel="Example Modal">
+      <Modal isOpen={open} style={customStyles} contentLabel="Example Modal">
         <S.ModalDiv>
-          <S.BoxModalText>Cadastro de Medicamento</S.BoxModalText>
+          <S.BoxModalText>Agendar Exames</S.BoxModalText>
           <S.CloseIcon onClick={(e) => handleModal(e, true)}>
             <AiOutlineClose size={25} />
           </S.CloseIcon>
         </S.ModalDiv>
         <S.BoxModal>
           <S.BoxModalForm>
-            <span className="nome">Nome do Medicamento</span>
+            <span className="nome">Nome do Exame</span>
             <input type="text" />
-            <span>Quantidade</span>
-            <span>Tipo</span>
-            <input className="quantidade" type="text" />
-            <input className="tipo" type="text" />
-            <span>Repetir em Horas</span>
-            <span>Repetir em minutos</span>
+            <span className="nome">Laboratório</span>
+            <input type="text" />
+            <span>Data</span>
+            <span>Hora</span>
+            <input className="data" type="text" />
             <input className="horas" type="text" />
-            <input className="minutos" type="text" />
             <ButtonAction value="Cadastrar" type="button"/>
           </S.BoxModalForm>
         </S.BoxModal>
@@ -70,4 +69,4 @@ const ModalMedicament = ({ openM, closeModal }: ModalProps) => {
   );
 };
 
-export default ModalMedicament;
+export default ModalExam;
