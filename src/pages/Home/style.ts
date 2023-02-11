@@ -58,10 +58,14 @@ export const HomeHeaderDetailsSearch = styled.div`
 export const HomeTitle = styled.h2`
   ${({ theme }) => css`
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end ;
     border-bottom: 1px solid ${theme.colors.baseLine};
     ${theme.mixins.bodyStyle()};
     color: ${theme.colors.primaryColor};
     padding-bottom: 10px;
+    padding-top: 10px;
     b {
       position: relative;
       &::after {
@@ -74,6 +78,9 @@ export const HomeTitle = styled.h2`
         background-color: ${theme.colors.primaryColor};
         border-radius: 5rem;
       }
+    }
+    button {
+
     }
   `}
 `;

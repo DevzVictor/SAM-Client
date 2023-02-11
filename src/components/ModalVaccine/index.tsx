@@ -59,7 +59,7 @@ const ModalVaccine = ({ open, closeModal }: ModalProps) => {
             <span>Data 2° dose</span>
             <input className="data" type="date" />
             <input className="horas" type="text" />
-            <ButtonAction value="Cadastrar" type="button"/>
+            <ButtonAction value="Agendar" type="button"/>
           </S.BoxModalForm>
         </S.BoxModal>
       </Modal>

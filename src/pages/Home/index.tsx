@@ -6,6 +6,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import Menu from "components/Menu";
 import PatientList from "components/PatientList";
 import PatientCard from "components/PatientCard";
+import ButtonAddPatient from "components/ButtonAddPatient";
 import Overlay from "components/Overlay";
 
 //routes
@@ -29,7 +30,10 @@ const Home = () => {
           </S.HomeHeaderDetails>
         </header>
         <div>
-          <S.HomeTitle><b>Pacientes</b></S.HomeTitle>
+          <S.HomeTitle>
+            <b>Pacientes</b>
+            <ButtonAddPatient value="Adicionar Paciente" type="button" />
+          </S.HomeTitle>
           <S.HomePatientList>
             <PatientList>
               <PatientCard></PatientCard>

@@ -61,7 +61,7 @@ const ModalExam = ({ open, closeModal }: ModalProps) => {
             <span>Hora</span>
             <input className="data" type="text" />
             <input className="horas" type="text" />
-            <ButtonAction value="Cadastrar" type="button"/>
+            <ButtonAction value="Agendar" type="button"/>
           </S.BoxModalForm>
         </S.BoxModal>
       </Modal>
