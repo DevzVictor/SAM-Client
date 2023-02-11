@@ -31,6 +31,7 @@ export const BoxLoginLogoText = styled.text`
     }
   `}
 `;
+
 export const BoxLoginLogoLink = styled.text`
   ${({ theme }) => css`
     ${theme.mixins.bodyStyle()};

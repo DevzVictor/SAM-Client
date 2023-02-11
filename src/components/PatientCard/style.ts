@@ -46,3 +46,19 @@ export const PatientCardName = styled.h3`
     margin: 5px 0px 5px 0px;
   `}
 `;
+
+export const CardIcon = styled.button`
+  ${({ theme}) => css`
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid ${theme.colors.primaryColor};
+    display: flex;
+    position: relative;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    color: ${theme.colors.primaryColor};
+    cursor: pointer;
+  `}
+`;
