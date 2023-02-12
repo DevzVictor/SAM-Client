@@ -4,6 +4,7 @@ import Home from "pages/Home/index";
 import Login from "pages/Login";
 import Signup from "pages/Signup";
 import Settings from "pages/Settings";
+import Patient from "pages/Patient";
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
       <Route path={RoutePath.SIGNUP} element={<Signup />} />
       <Route path={RoutePath.HOME} element={<Home />} />
       <Route path={RoutePath.SETTINGS} element={<Settings />} />
+      <Route path={RoutePath.SETTINGS_PATIENT} element={<Patient />} />
     </Routes>
   );
 };

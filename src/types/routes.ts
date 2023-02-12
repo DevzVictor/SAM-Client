@@ -4,7 +4,7 @@ export enum RoutePath {
   LOGIN = "/login",
   SIGNUP = "/signup",
   SETTINGS = "/settings",
-  SETTINGS_PATIENTS = "patients",
+  SETTINGS_PATIENT = "/patient",
   SETTINGS_MEDICAMENTS = "medicaments",
   SETTINGS_EXAMS = "exams",
   SETTINGS_VACCINES = "vaccines",
