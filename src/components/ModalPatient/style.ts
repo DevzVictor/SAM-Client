@@ -57,7 +57,7 @@ export const BoxModalForm = styled.form`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 6px;
     border: none
     width: 100%;
     input {
@@ -66,7 +66,7 @@ export const BoxModalForm = styled.form`
       outline: none;
       border-color: ${theme.colors.primaryColor};
       width: 100%;
-      height: 35px;
+      height: 30px;
     }
     span {
       ${theme.mixins.bodyStyle()};

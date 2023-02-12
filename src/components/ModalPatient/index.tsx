@@ -65,6 +65,8 @@ const ModalPatient = ({ open, closeModal }: ModalProps) => {
             <span>Telefone 2</span>
             <input className="phone" type="text" />
             <input className="phone" type="text" />
+            <span  className="nome">Detalhes</span>
+            <input className="detalhes" type="text" />
             <ButtonAction value="Adicionar" type="button"/>
           </S.BoxModalForm>
         </S.BoxModal>
