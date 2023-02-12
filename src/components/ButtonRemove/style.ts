@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-export const ButtonAction = styled.button`
+export const ButtonRemove = styled.button`
   ${({ theme }) => css`
-    background: ${theme.colors.primaryColor};
+    background: red;
     margin-top: 10px;
     border: none;
     border-radius: 8px;
