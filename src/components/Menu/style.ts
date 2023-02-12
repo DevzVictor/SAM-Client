@@ -18,7 +18,8 @@ export const Menu = styled.menu`
   ${({ theme }) => css`
     margin: 0;
     padding: 20px 0;
-    height: 120vh;
+    overflow: hidden;
+    min-height: 100%;
     width: 105px;
     display: flex;
     flex-direction: column;
