@@ -25,6 +25,7 @@ export const HomeHeaderDetails = styled.div`
   ${() => css`
     display: flex;
     justify-content: space-between;
+    align-items: center;
   `}
 `;
 
@@ -95,5 +96,20 @@ export const HomePatientList = styled.div`
 export const HomePatientListGap = styled.div`
   ${({ theme }) => css`
     width: 200px;
+  `}
+`;
+
+export const HomeHeaderText = styled.h5`
+  ${() => css`
+    margin: 0;
+
+  `}
+`;
+
+export const UserCardImage = styled.img`
+  ${() => css`
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -75px;
   `}
 `;

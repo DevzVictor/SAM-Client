@@ -19,11 +19,11 @@ const Home = () => {
   const [patientModal, setPatientModal] = useState(false);
 
   function openModal() {
-    console.log(patientModal)
+    console.log(patientModal);
     setPatientModal(true);
   }
 
-  function closeModal(){
+  function closeModal() {
     setPatientModal(false);
   }
 
@@ -40,12 +40,20 @@ const Home = () => {
               <AiOutlineSearch />
               <input type="text" placeholder="Procure pelo paciente" />
             </S.HomeHeaderDetailsSearch>
+            <div>
+              <S.HomeHeaderText>Bem vindo {"Victor"}</S.HomeHeaderText>
+              <S.UserCardImage/>
+            </div>
           </S.HomeHeaderDetails>
         </header>
         <div>
           <S.HomeTitle>
             <b>Pacientes</b>
-            <ButtonAddPatient onClick={openModal} value="Adicionar Paciente" type="button" />
+            <ButtonAddPatient
+              onClick={openModal}
+              value="Adicionar Paciente"
+              type="button"
+            />
           </S.HomeTitle>
           <S.HomePatientList>
             <PatientList>
@@ -54,7 +62,7 @@ const Home = () => {
           </S.HomePatientList>
         </div>
       </S.HomeContent>
-      <ModalPatient closeModal={closeModal} open={patientModal}/>
+      <ModalPatient closeModal={closeModal} open={patientModal} />
       {/* <Overlay></Overlay> */}
     </S.Home>
   );
